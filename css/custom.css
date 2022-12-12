@@ -1,0 +1,18 @@
+#podcast {
+    background-image: linear-gradient(to right, #14532d, #166534, #15803d, #16a34a, #22c55e, #85c3de, #6ec1e4, #45b1df, #27a7de, #0a9ddc);
+    background-size: 300%;
+    background-position: left;
+    animation: gradient-animate 20s linear infinite alternate;
+}
+
+@keyframes gradient-animate {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN link for animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CDN link for flowbite.min.css -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Splider CSS -->
+    <link rel="stylesheet" href="../css/splide.min.css">
+
+    <!-- CDN link for swipper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!-- CDN link for Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CDN link for phosphoric icon -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <!-- cdn css link for jsdelivr animation -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- cdn for tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- JQUERY LINK -->
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!-- Brand icon -->
+    <link rel="shortcut icon" href="../img/Capture-removebg-preview.png" type="image/x-icon">
+
+    <title>Founder Institute</title>
+</head>
+
+<body class=" bg-white dark:bg-gray-900">
+
+        <!-- Start of Navbar-->
+        <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200
+     dark:border-gray-600">
+
+            <!-- Navlink Container Wrapper -->
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+
+                <!-- Logo -->
+                <a href="" class="flex items-center">
+                    <img loading="lazy" src="../img/logo.png" alt="" class="w-28 md:w-40  h-full ml-3">
+
+                </a>
+                <div class="flex lg:order-2">
+                    <div class="flex flex-row gap-2">
+
+                        <!-- Dark mode and light mode icon -->
+                        <button id="theme-toggle" type="button" class="text-forestGreen dark:text-forestGreen hover:bg-gray-100 
+                        dark:hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-forestGreen dark:focus:ring-forestGreen 
+                        rounded-lg text-sm p-2">
+
+                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 
+                            1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 
+                            1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 
+                            011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 
+                            6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 
+                            1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Link to apply for cohort -->
+                        <a href="" class="p-1 px-3 pt-2 md:p-3 md:px-6 md:pt-2 ml-0 font-serif text-white text-sm md:text-base font-medium  
+                        bg-forestGreen hover:bg-darkYello focus:outline-none dark:focus:outline-ring-forestGreen rounded-lg baseline 
+                        dark:bg-forestGreen  dark:hover:bg-darkYello"> Apply for Cohort
+                        </a>
+                    </div>
+
+                    <!-- Toggle Hamburger Icon on small screen -->
+                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center ml-3 p-0 text-sm text-gray-600 
+                    rounded-lg lg:hidden  focus:outline-none focus:ring-0 dark:text-gray-500"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 
+                            1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navlinks -->
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 lg:flex-row lg:space-x-8 lg:mt-0 
+                md:text-sm md:font-medium lg:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="founders.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Founders</a>
+                        </li>
+
+                        <li>
+                            <a href="mentors.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Mentors</a>
+                        </li>
+
+                        <li>
+                            <a href="impact.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Impacts</a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="contactUs.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="resources.html" class="block py-2 pr-4 pl-3 font-serif font-bold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-forestGreen md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Navlinks -->
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <!-- Section Resources -->
+        <section class="founders bg-white dark:bg-gray-900 pt-11 md:pt-20 pb-11 md:pb-20">
+
+            <div class="container flex items-center justify-center mt-16 w-full mx-auto py-9 px-14 space-y-7" data-aos="zoom-in-up">
+                <h1
+                    class="text-lightBlue first-letter:text-forestGreen first-letter:text-3xl md:first-letter:text-5xl font-serif font-semibold text-xl md:text-4xl text-center inline-block mb-16 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-36 after:bg-forestGreen">
+                    Resources</h1>
+                <P class="font-serif text-white leading-7 dark:text-gray-900 dark:font-semibold"></P>
+            </div>
+
+            <section class="w-full h-auto px-6 md:px-16 ">
+
+                <!-- resources wrapper -->
+                <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                    <!-- single resource -->
+                    <div class="ring-1 ring-forestGreen rounded flex flex-col group" data-aos="zoom-in-up">
+                        <div class="w-full h-60 overflow-hidden">
+                            <img loading="lazy" src="../img/CAS_1927.jpg" alt=""
+                                class="w-full h-full group-hover:scale-125 transition-all duration-700">
+                        </div>
+                        <div
+                            class="w-full h-auto flex items-center justify-between px-4 py-2 bg-forestGreen text-white text-sm">
+                            <span class="flex items-center gap-1"><i class="ph-calendar"></i> 12-12-2022</span>
+                            <span class="flex items-center gap-1"><i class="ph-user"></i> Richard Wilson</span>
+                        </div>
+                        <h1 class="text-xl px-4 font-serif capitalize text-gray-800 dark:text-gray-200 py-2">Businesses
+                            and Partnership
+                            Announcement
+                        </h1>
+
+                        <a href="singleResource.html"
+                            class="px-3 py-2 text-sm bg-forestGreen hover:bg-darkYello text-white inline-block self-start mb-4 ml-4">Read
+                        </a>
+                    </div>
+
+
+                    <!-- single resource -->
+                    <div class="ring-1 ring-forestGreen rounded flex flex-col group " data-aos="zoom-in-up">
+                        <div class="w-full h-60 overflow-hidden">
+                            <img loading="lazy" src="../img/CAS_1927.jpg" alt=""
+                                class="w-full h-full group-hover:scale-125 transition-all duration-700">
+                        </div>
+                        <div
+                            class="w-full h-auto flex items-center justify-between px-4 py-2 bg-forestGreen text-white text-sm">
+                            <span class="flex items-center gap-1"><i class="ph-calendar"></i> 12-12-2022</span>
+                            <span class="flex items-center gap-1"><i class="ph-user"></i> Richard Wilson</span>
+                        </div>
+                        <h1 class="text-xl px-4 font-serif capitalize text-gray-800 dark:text-gray-200 py-2">Businesses
+                            and Partnership
+                            Announcement
+                        </h1>
+
+                        <a href="#"
+                            class="px-3 py-2 text-sm bg-forestGreen hover:bg-darkYello text-white inline-block self-start mb-4 ml-4">Read
+                        </a>
+                    </div>
+
+                    <!-- single resource -->
+                    <div class="ring-1 ring-forestGreen rounded flex flex-col group" data-aos="zoom-in-up">
+                        <div class="w-full h-60 overflow-hidden">
+                            <img loading="lazy" src="../img/CAS_1927.jpg" alt=""
+                                class="w-full h-full group-hover:scale-125 transition-all duration-700">
+                        </div>
+                        <div
+                            class="w-full h-auto flex items-center justify-between px-4 py-2 bg-forestGreen text-white text-sm">
+                            <span class="flex items-center gap-1"><i class="ph-calendar"></i> 12-12-2022</span>
+                            <span class="flex items-center gap-1"><i class="ph-user"></i> Richard Wilson</span>
+                        </div>
+                        <h1 class="text-xl px-4 font-serif capitalize text-gray-800 dark:text-gray-200 py-2">Businesses
+                            and Partnership
+                            Announcement
+                        </h1>
+
+                        <a href="#"
+                            class="px-3 py-2 text-sm bg-forestGreen hover:bg-darkYello text-white inline-block self-start mb-4 ml-4">Read
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+        </section>
+        <!-- End of section for Resources -->
+
+        <!-- Our Partners Section -->
+        <section class="w-full h-auto">
+                    <div class="container flex items-center justify-center  w-full mx-auto py-9 px-14 space-y-7 " data-aos="zoom-in-up">
+                        <h1
+                            class="text-lightBlue uppercase first-letter:text-forestGreen first-letter:text-3xl md:first-letter:text-5xl font-serif font-semibold text-xl md:text-4xl text-center inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-36 after:bg-forestGreen">
+                            Our partners</h1>
+                        <P class="font-serif text-white leading-7 dark:text-gray-900 dark:font-semibold"></P>
+                    </div>
+        
+                    <section class="splide" aria-label="Splide Basic HTML Example" data-aos="zoom-in-up">
+                        <div class="splide__track bg-gray-100 w-full py-3 my-6 border-x-8 border-forestGreen">
+                            <ul class="splide__list w-auto h-20">
+                                <li class="splide__slide mx-3 h-full">
+                                    <a href="#" class="inline-block h-full w-full">
+                                        <img loading="lazy" src="../img/partners/partners2.png" class="w-full h-full object-contain">
+                                    </a>
+                                </li>
+                                <li class="splide__slide mx-3 h-full">
+                                    <a href="#" class="inline-block h-full w-full">
+                                        <img loading="lazy" src="../img/partners/partner1.jpg" class="w-full h-full object-contain">
+                                    </a>
+                                </li>
+                                <li class="splide__slide mx-3 h-full">
+                                    <a href="#" class="inline-block h-full w-full">
+                                        <img loading="lazy" src="../img/partners/partner3.png" class="w-full h-full object-contain">
+                                    </a>
+                                </li>
+                                <li class="splide__slide mx-3 h-full">
+                                    <a href="#" class="inline-block w-full h-full">
+                                        <img loading="lazy" src="../img/partners/partner4.png" class="w-full h-full object-contain">
+                                    </a>
+                                </li>
+                                <li class="splide__slide mx-3 h-full">
+                                    <a href="#" class="inline-block w-full h-full">
+                                        <img loading="lazy" src="../img/partners/partner5.png" class="w-full h-full object-contain">
+                                    </a>
+                                </li>
+                                <li class="splide__slide mx-3 h-full">
+                                    <a href="#" class="inline-block w-full h-full">
+                                        <img loading="lazy" src="../img/partners/partner6.png" class="w-full h-full object-contain">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+        
+        </section>
+        <!-- End of Partners Section -->
+
+
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="p-10 bg-gray-900 border-t text-white dark:text-gray-900">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+
+                        <!-- Footer Logo -->
+                        <div class="mb-5 ">
+                            <div class="mb-2 flex flex-row ">
+                                <img loading="lazy" src="../img/Capture-removebg-preview-removebg-preview.png"
+                                    class="w-20 h-20">
+                                <p class="font-serif dark:text-white font-bold text-white">FOUNDER <br> INSTITUTE <br>
+                                    LAGOS </p>
+                            </div>
+
+
+                            <div class="">
+                                <p class="font-serif text-gray-300 dark:text-white">A123 Lost Street <br>
+                                    Lagost State, Nigeria.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="mb-5">
+                            <div class='font-bold uppercase font-serif text-white  dark:text-white'>Quick Links</div>
+
+                            <div class='mt-1'>
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen group"
+                                        href="index.html"> <i class="ri-arrow-right-s-line text-white  pr-1"></i>
+                                        Home</a></div>
+
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen"
+                                        href="founders.html"> <i class="ri-arrow-right-s-line text-white  pr-1"></i>
+                                        Founders</a>
+                                </div>
+
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen "
+                                        href="mentors.html"> <i class="ri-arrow-right-s-line text-white  pr-1"></i>
+                                        Mentors</a>
+                                </div>
+
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen "
+                                        href="impact.html"> <i class="ri-arrow-right-s-line text-white  pr-1"></i>
+                                        Impacts</a>
+                                </div>
+
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen"
+                                        href="gallery.html"> <i class="ri-arrow-right-s-line text-white  pr-1"></i>
+                                        Gallery</a>
+                                </div>
+
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen"
+                                        href="resources.html"> <i class="ri-arrow-right-s-line text-white  pr-1"></i>
+                                        Resources</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer Link Support -->
+                        <div class="mb-5">
+                            <div class='font-bold uppercase font-serif text-white'>Support</div>
+                            <div class='mt-1'>
+                                <div class='mt-2'><a class="font-serif text-gray-300 hover:text-forestGreen font-medium"
+                                        href="#"> <i class="ri-arrow-right-s-line pr-1 text-white"></i>
+                                        Apply to a
+                                        Cohort</a></div>
+                                <div class='mt-2'><a
+                                        class="font-serif text-gray-300 hover:text-forestGreen  font-medium"
+                                        href="contactUs.html"> <i class="ri-arrow-right-s-line text-white pr-1 "></i>
+                                        Contact Us</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Subscribe to Newsletter -->
+                        <div class="mb-5">
+                            <div class='font-bold uppercase font-serif pb-2 mb-4 text-white'>Subscribe to Our Newsletter
+                            </div>
+                            <form action="" class="flex flex-row flex-wrap">
+                                <input type="text" name="" id=""
+                                    class="text-gray-500 w-2/3 p-2 border focus:outline-none focus:ring-forestGreen focus:border-forestGreen"
+                                    placeholder="email@example.com">
+                                <div
+                                    class="p-2 w-1/3 bg-forestGreen text-white hover:bg-darkYello outline-none border-0 font-bold cursor-pointer">
+                                    Subscribe</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-white lg:my-8" />
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+
+                    <span class="text-sm text-gray-300 sm:text-center font-semibold  inline-flex gap-1">
+                        © <p id="year"></p> <a href="#" class="hover:underline">Founder Institute, Inc</a>. All Rights
+                        Reserved.
+                    </span>
+                    <!-- Social icons -->
+                    <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-forestGreen dark:hover:text-forestGreen "
+                            target="_blank">
+                            <i class="ri-phone-fill"></i>
+                        </a>
+                        <a href="https://www.facebook.com/FounderInstitute"
+                            class="text-gray-300 hover:text-forestGreen dark:hover:text-forestGreen " target="_blank">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/founding"
+                            class="text-gray-300 hover:text-forestGreen dark:hover:text-forestGreen " target="_blank">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/founding"
+                            class="text-gray-300 hover:text-forestGreen dark:hover:text-forestGreen" target="_blank">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/company/the-founder-institute"
+                            class="text-gray-300 hover:text-forestGreen dark:hover:text-forestGreen " target="_blank">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-forestGreen dark:hover:text-forestGreen "
+                            target="_blank">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+
+                    </div>
+                </div>
+        </footer>
+        <!-- End of Footer -->
+
+    <!-- AOS javascript  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Splider Javascript Link -->
+    <script src="../src/JavacriptFolder/splide.min.js"></script>
+
+     <!-- Javascript Splider CDN link -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+     </script>
+
+    <!-- js file for partners animation  -->
+    <script src="../src/JavacriptFolder/partners.js"></script>
+
+    <!-- CDN link for flowbite Javascript -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+    <!-- Javascript Link for swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/JavacriptFolder/swiper-bundle.min.js"></script>
+
+    <!-- Javascript Link -->
+    <script src="../src/JavacriptFolder/app.js"></script>
+
+    <!-- jsdelivr CDN link -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+
+</body>
+
+</html>
